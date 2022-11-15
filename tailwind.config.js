@@ -18,7 +18,11 @@ module.exports = {
       pink300: '#f9a8d4',
       sky500: ' #0ea5e9'
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        leagueSpartan: ['League Spartan']
+      }
+    }
   },
   plugins: []
 }
