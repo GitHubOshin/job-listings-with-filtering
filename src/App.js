@@ -1,4 +1,8 @@
+import React from 'react'
+import data from './assets/data.json'
 import JobBoardComponent from './components/JobBoardComponent'
+
+console.log(data)
 
 function App() {
   return (
