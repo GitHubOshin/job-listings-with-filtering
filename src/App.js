@@ -7,16 +7,22 @@ function App() {
 
   useEffect(() => setJobs(data), [])
 
-  console.log(data)
-
   return (
-    <div className="App">
-      <h1>TESTING WEBSITE</h1>
-      {jobs.length === 0 ? (
-        <p>Jobs are fetching...</p>
-      ) : (
-        jobs.map((job) => <JobBoardComponent job={job} key={job.id} />)
-      )}
+    <div className="font-leagueSpartan bg-bgLightGrayishCyan flex flex-col items-center gap-20">
+      <header className="bg-desaturatedDarkCyan">
+        <img
+          className="bg-darkCyan"
+          alt="Header"
+          src="/images/bg-header-desktop.svg"
+        />
+      </header>
+      <div className="w-[1120px] flex flex-col gap-5">
+        {jobs.length === 0 ? (
+          <p>Jobs are fetching...</p>
+        ) : (
+          jobs.map((job) => <JobBoardComponent job={job} key={job.id} />)
+        )}
+      </div>
     </div>
   )
 }
