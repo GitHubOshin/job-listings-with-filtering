@@ -14,7 +14,8 @@ function JobBoardComponent({
     location,
     languages,
     tools
-  }
+  },
+  handleTagClick
 }) {
   const tags = [role, level]
   if (tools) {
@@ -26,8 +27,12 @@ function JobBoardComponent({
   }
 
   return (
-    <div className="bg-white text-desaturatedDarkCyan h-36 rounded shadow-lg flex items-center gap-8 px-11">
-      <img alt={company} src={logo} />
+    <div
+      className={` bg-white text-desaturatedDarkCyan h-36 rounded shadow-lg flex items-center gap-8 px-11 ${
+        featured && 'border-l-4'
+      }`}
+    >
+      <img alt={company} src={logo} className="" />
       <div className="w-full flex justify-between items-center">
         <div className="flex flex-col gap-1">
           <div className="flex font-semibold items-center gap-4">
@@ -57,6 +62,7 @@ function JobBoardComponent({
             ? tags.map((tag, index) => (
                 <button
                   key={index}
+                  onClick={() => handleTagClick(tag)}
                   className="bg-ftLightGrayishCyan h-fit font-semibold text-base text-desaturatedDarkCyan rounded px-2 pt-[4px] pb-[2px] cursor-pointer hover:text-white hover:bg-desaturatedDarkCyan"
                 >
                   {tag}
