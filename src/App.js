@@ -53,12 +53,11 @@ function App() {
                   className="bg-ftLightGrayishCyan rounded-[3px] flex items-center"
                 >
                   <span
-                    onClick={() => handleFilterClick(filter)}
                     className=" font-semibold text-base text-desaturatedDarkCyan rounded px-2 pt-[4px] pb-[2px]  "
                   >
                     {filter}
                   </span>
-                  <button className="hover:bg-slate800 bg-desaturatedDarkCyan h-full w-8 rounded-r-[3px] flex items-center justify-center cursor-pointer">
+                  <button className="hover:bg-slate800 bg-desaturatedDarkCyan h-full w-8 rounded-r-[3px] flex items-center justify-center cursor-pointer" onClick={() => handleFilterClick(filter)}>
                     <img alt="remove" src="/images/icon-remove.svg" />
                   </button>
                 </div>
