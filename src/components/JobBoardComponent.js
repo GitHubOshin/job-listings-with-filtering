@@ -28,7 +28,7 @@ function JobBoardComponent({
 
   return (
     <div
-      className={` bg-white text-desaturatedDarkCyan h-36 rounded shadow-lg flex items-center gap-8 px-11 ${
+      className={` bg-white text-desaturatedDarkCyan h-36 rounded shadow-xl shadow-shadow flex items-center gap-8 px-11 ${
         featured && 'border-l-4'
       }`}
     >
@@ -76,3 +76,4 @@ function JobBoardComponent({
 }
 
 export default JobBoardComponent
+
