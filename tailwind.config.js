@@ -16,7 +16,9 @@ module.exports = {
       slate500: '#64748b',
       slate300: '#94a3b8',
       pink300: '#f9a8d4',
-      sky500: ' #0ea5e9'
+      sky500: ' #0ea5e9',
+      shadow: '#DAEBEC',
+      header: '#63baba'
     },
     extend: {
       fontFamily: {
