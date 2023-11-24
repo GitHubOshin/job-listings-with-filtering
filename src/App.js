@@ -52,12 +52,13 @@ function App() {
                   key={index}
                   className="bg-ftLightGrayishCyan rounded-[3px] flex items-center"
                 >
-                  <span
-                    className=" font-semibold text-base text-desaturatedDarkCyan rounded px-2 pt-[4px] pb-[2px]  "
-                  >
+                  <span className=" font-semibold text-base text-desaturatedDarkCyan rounded px-2 pt-[4px] pb-[2px]  ">
                     {filter}
                   </span>
-                  <button className="hover:bg-slate800 bg-desaturatedDarkCyan h-full w-8 rounded-r-[3px] flex items-center justify-center cursor-pointer" onClick={() => handleFilterClick(filter)}>
+                  <button
+                    className="hover:bg-slate800 bg-desaturatedDarkCyan h-full w-8 rounded-r-[3px] flex items-center justify-center cursor-pointer"
+                    onClick={() => handleFilterClick(filter)}
+                  >
                     <img alt="remove" src="/images/icon-remove.svg" />
                   </button>
                 </div>
@@ -86,6 +87,9 @@ function App() {
           ))
         )}
       </div>
+      <footer>
+        💖 Created by OSHIN (Ganjanapas Phothong) & anonymous man 💖
+      </footer>
     </div>
   )
 }
